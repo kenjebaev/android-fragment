@@ -28,7 +28,7 @@ public class MainFragment extends Fragment {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
 
 
-        viewPagerAdapter = new ViewPagerAdapter(getFragmentManager());
+        viewPagerAdapter = new ViewPagerAdapter(getChildFragmentManager());
         viewPagerAdapter.addFragment(new ChildFragment(), "Child 1");
         viewPagerAdapter.addFragment(new ChildFragment(), "Child 2");
         viewPagerAdapter.addFragment(new ChildFragment(), "Child 3");
